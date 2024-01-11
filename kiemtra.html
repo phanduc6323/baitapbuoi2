@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kiemtrathungay</title>
+    <script>
+      function myFunction() {
+        var a = document.getElementById("ngaytrongtuan").value;
+        var kt;
+        if (a >= 1 && a <= 7) {
+          if (a == 1) {
+            kt = "Chủ nhật";
+          } else if (a == 2) {
+            kt = "Thứ hai";
+          } else if (a == 3) {
+            kt = "Thứ ba";
+          } else if (a == 4) {
+            kt = "Thứ tư";
+          } else if (a == 5) {
+            kt = "Thứ năm";
+          } else if (a == 6) {
+            kt = "Thứ sáu";
+          } else {
+            kt = "Thứ bảy";
+          }
+        } else {
+          kt = "Vui lòng nhập một số từ 1 đến 7!";
+        }
+        document.getElementById("demo").innerHTML = kt;
+      }
+    </script>
+  </head>
+  <body>
+    <div>Nhập ngày <input type="number" id="ngaytrongtuan" /></div>
+    <div><button onclick="myFunction()">Kiểm tra</button></div>
+    <p>Hôm nay là: <span id="demo"></span></p>
+  </body>
+</html>
